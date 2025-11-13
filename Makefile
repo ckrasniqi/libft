@@ -6,7 +6,7 @@
 #    By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/15 16:59:12 by ckrasniq          #+#    #+#              #
-#    Updated: 2025/11/13 13:30:51 by ckrasniq         ###   ########.fr        #
+#    Updated: 2025/11/13 14:18:32 by ckrasniq         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,6 @@ $(NAME): $(OBJS)
 
 .PHONY: all clean fclean re
 
-# Build object files in $(OBJDIR)/
 $(OBJDIR)/%.o: %.c | $(OBJDIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 

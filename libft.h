@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:46 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 19:58:23 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/13 13:33:57 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+int					ft_strcmp(const char *str1, const char *str2);
 
 // Bonus
 t_list				*ft_lstnew(void *content);

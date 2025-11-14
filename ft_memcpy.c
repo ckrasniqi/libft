@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 16:26:24 by ckrasniq          #+#    #+#             */
-/*   Updated: 2024/10/30 19:52:58 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/14 16:33:40 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		*dest++ = *sorc++;
 		i++;
 	}
+	*dest = '\0';
 	return (dst);
 }
 // int	main(void)

@@ -12,23 +12,14 @@
 
 #include "libft.h"
 
-void	*ft_memset(void *ptr, int i, size_t n)
-{
-	unsigned char	*str;
-
-	str = ptr;
-	while (n--)
-	{
-		*str++ = (unsigned char)i;
-	}
-	return (ptr);
-}
-
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	total_size;
 	void	*ptr;
 
+	/* check for multiplication overflow */
+	if (count != 0 && size != 0 && count > ((size_t)-1) / size)
+		return (NULL);
 	total_size = count * size;
 	ptr = malloc(total_size);
 	if (!ptr)

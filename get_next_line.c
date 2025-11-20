@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:06:18 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 19:20:54 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/20 20:29:04 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,15 @@ char	*ft_gnl_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	if (s == NULL)
 		return (NULL);
-	if (len >= ft_gnl_strlen(s) - start)
-		len = ft_gnl_strlen(s) - start;
+	/* if start is beyond end of string return empty string */
 	if (ft_gnl_strlen(s) <= start)
 		return (ft_gnl_strdup(""));
+	if (len >= ft_gnl_strlen(s) - start)
+		len = ft_gnl_strlen(s) - start;
 	ptr = (char *)malloc(sizeof(char) * len + 1);
 	if (!ptr)
 		return (NULL);
-	while (i < len && s[i] != '\0')
+	while (i < len && s[start] != '\0')
 	{
 		ptr[i] = s[start];
 		i++;

@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 14:07:54 by ckrasniq          #+#    #+#             */
-/*   Updated: 2024/10/25 17:25:25 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/20 20:29:04 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	first = 0;
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	last = ft_strlen(s1);
 	while (s1 && ft_check(s1[i], set) == 1)
 	{

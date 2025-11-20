@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 20:06:20 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 19:20:54 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/20 20:29:04 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_gnl_strchr(char *str, char c)
 {
 	int	i;
 
+	if (str == NULL)
+		return (NULL);
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -96,7 +98,9 @@ char	*ft_gnl_strdup(const char *src)
 	size_t	i;
 	char	*array;
 
-	i = ft_strlen(src);
+	if (src == NULL)
+		return (NULL);
+	i = ft_gnl_strlen(src);
 	array = (char *)malloc(sizeof(char) * (i + 1));
 	if (array == NULL)
 		return (NULL);

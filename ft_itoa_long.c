@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 18:43:13 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/02/06 18:56:50 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/21 14:23:21 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	reverse_digits_long(char *array)
 	}
 }
 
-void	create_digit_array_long(unsigned int n, int len, char *array)
+void	create_digit_array_long(int n, int len, char *array)
 {
 	int	neg;
 	int	i;
@@ -55,7 +55,7 @@ void	create_digit_array_long(unsigned int n, int len, char *array)
 	}
 }
 
-int	count_len_long(unsigned int n)
+int	count_len_long(int n)
 {
 	int	len;
 
@@ -72,7 +72,7 @@ int	count_len_long(unsigned int n)
 	return (len);
 }
 
-char	*ft_itoa_long(unsigned int n)
+char	*ft_itoa_long(int n)
 {
 	char	*array;
 	int		bytes;

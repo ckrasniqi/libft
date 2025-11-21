@@ -6,7 +6,7 @@
 /*   By: ckrasniq <ckrasniq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 15:34:46 by ckrasniq          #+#    #+#             */
-/*   Updated: 2025/11/13 18:15:10 by ckrasniq         ###   ########.fr       */
+/*   Updated: 2025/11/21 14:24:37 by ckrasniq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void				*ft_gnl_memmove(void *dst, const void *src, size_t n);
 // ft_printf
 
 void				*ft_calloc(size_t count, size_t size);
-char				*ft_itoa_long(unsigned int n);
+char				*ft_itoa_long( int n);
 char				*ft_itoa(int n);
 void				ft_print_hex_l(unsigned int num, int *count);
 void				ft_print_hex_u(unsigned int num, int *count);
